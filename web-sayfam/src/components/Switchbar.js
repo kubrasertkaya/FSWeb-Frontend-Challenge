@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { IoMdMore } from "react-icons/io"
+// import React, { useEffect, useState } from 'react'
+// import { IoMdMore } from "react-icons/io"
 
 
- const Switchbar = () => {
+//  const Switchbar = () => {
 //   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("these") : "light");
 
 //   const handleToggle = (e) => {
@@ -67,10 +67,9 @@ import { IoMdMore } from "react-icons/io"
 
       {/* </div> */}
     
-          }
-
+          
 
   
 
 
-export default Switchbar
+// export default Switchbar
