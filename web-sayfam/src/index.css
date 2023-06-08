@@ -34,4 +34,29 @@
     border-radius: 29.5px;
   }
   
+  .ellipse11 {
+    box-sizing: border-box ;
+  
+  position:relative;
+  width: 121px;
+  height: 121px;
+  left: 54.4%;
+  top: -20px;
+  margin-left: 30rem;
+  margin-top: -140px;
+  
+  border: 21px solid #D9D9D9;
+  border-radius: 50%;
+  }
 
+  .rectangle22 {
+    position: absolute;
+    width: 181px;
+    height: 49px;
+    left: -3.7%;
+    top: 1200px;
+    margin-top: -1rem;
+    
+    background: #525252;
+    border-radius: 29.5px;
+  }

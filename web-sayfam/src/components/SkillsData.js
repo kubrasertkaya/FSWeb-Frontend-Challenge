@@ -23,7 +23,7 @@ export const SkillsData = [
       },
       {
         id: "5",
-        name: "VS CODE",
+        name: "VSCODE",
         imgsrc: require("../resimler/vscode.png"),
       },
       {
