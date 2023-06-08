@@ -2,33 +2,33 @@ export const SkillsData = [
     {
         id: "1",
         name: "JAVASCRIPT",
-        imgsrc: require("../resimler/js.png"),
+        imgsrc: require("../image1/js.png"),
       
       },
       {
         id: "2",
         name: "REACT",
-        imgsrc: require("../resimler/react.png"),
+        imgsrc: require("../image1/react.png"),
       },
       {
         id: "3",
         name: "REDUX",
-        imgsrc: require("../resimler/redux.png"),
+        imgsrc: require("../image1/redux.png"),
       },
     
       {
         id: "4",
         name: "NODE",
-        imgsrc: require("../resimler/node.png"),
+        imgsrc: require("../image1/node.png"),
       },
       {
         id: "5",
         name: "VSCODE",
-        imgsrc: require("../resimler/vscode.png"),
+        imgsrc: require("../image1/vscode.png"),
       },
       {
         id: "6",
         name: "FIGMA",
-        imgsrc: require("../resimler/figma.png"),
+        imgsrc: require("../image1/figma.png"),
       },
 ];

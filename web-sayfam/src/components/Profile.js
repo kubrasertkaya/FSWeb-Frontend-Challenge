@@ -107,7 +107,7 @@ const Profile = () => {
                 </div>
 
             </div>
-            <div className={"xl:pl-[60rem]  mt-[-600px] inline-block  pr-[40rem] pt-[6rem] "}>
+            <div className={"xl:pl-[50rem]  mt-[-600px] flex  pr-[80rem] pt-[3rem] "}>
                                         <p className={
                                             "text-[2.4rem]  font-[400] leading-[3.2rem] tracking-[0.01em] font-['Playfair_Display']"
                                         }>About me

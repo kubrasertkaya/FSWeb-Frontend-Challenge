@@ -1,90 +1,94 @@
 import React from 'react'
+import kubra from "../image1/kubra.jpeg"
+import { SkillsData } from './SkillsData'
 
 
 
 const Hero = () => {
   return (
-    <div className= "block flex-col-reverse px-[2rem] mx-auto gap-10 xl:flex-row xl:pt-[15.1rem] xl:justify-evenly xl:pl-[16.2rem] xl:pr-[17.1rem] pb-[2rem] xl:pb-[9.4rem] bg-[#F4F4F4]">
-      <div>
-        <h6 className='text-base'>Hi!👋</h6>
-        <span>
-              <div
-                className="ellipse"
-                
-              ></div>
-            </span>
-        <p className="text-left text-2xl pr-[300px] xl:pt-[1rem] pt-[2rem] leading-10 xl:w-[45vw]  text-[#0A0A14]  pr-[200px] font-bold">
-        I’m Kübra. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!
+    <section className='container bg-slate-200'>
+      <header className='flex ms-auto w-fit gap-x-5 items-center py-12'>
+        
+        <div>
+          DARK MODE
+        </div>
+        <div className='w-px h-3 bg-black'></div>
+        <button>
+          TÜRKÇE'YE GEÇ
+        </button>
+      </header>
+      <div className='flex justify-between items-center py-8'>
+        <div>
+           <h6>Hi!</h6>
+           <p> I’m Kübra. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!</p>
+           <div>
+            <button>
+              linkdin
+            </button>
+            <button>
+               github
+            </button>
             
-        </p>
+           </div>
+        </div>
+        <div className='h-96 w-96'>
+          <img src={kubra}  alt='' className='h-full w-full'/>
+        </div>
+      </div> 
+      <div  className='inline'>
+          <h2 className='flex font-semibold place-content-center text-6xl'> 
+          Skills
+        </h2></div>
+      <div className='h-64 w-full  flex px-48  py-24'>
        
-        <span>
-              <div
-                className="rectangle18"
-                
-              ></div>
-            </span>
+      
+      {SkillsData.map((skill) => {
+          return (
+            <div className=" flex space-x-4 mx-5 place-items-center">
 
-            
-  
-      </div>
-      <div className={"flex  gap-[2rem] xl:mt-[0rem] mt-[2rem]"}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/h-k%C3%BCbra-sertkaya-b68b7a1b6"
-              >
-                <img
-                  className={"xl:mt-[5.6rem]"}
-                  width="30"
-                  height="30"
-                  src={"https://cdn-icons-png.flaticon.com/512/2111/2111532.png"}
-                  alt=""
-                  link={""}
-                  
-                />
-              </a>
+              <img className=""  alt='' src={skill.imgsrc} />
               
-              <a target="_blank" rel="noreferrer" href="https://github.com/kubrasertkaya">
-                <img
-                  className={"xl:mt-[5.6rem] "}
-                  width="30"
-                  height="30"
-                  src={"https://cdn-icons-png.flaticon.com/512/2111/2111432.png"}
-                  alt=""
-                />
-              </a>
+              <p className=" inline-block align-bottom mt-36 mx-36 gap-2 ">
+                {skill.name}
+              </p>
+
+              
             </div>
-      {/* <img src='../../resimler/kubra.jpeg' alt='fgjdkjg' /> */}
-      <p
-              className={
-                " w-[570px] h-[154px] right-[404px] pr-[100px] top-[500px] text-[0.7rem]  font-['Inter']  mt-[2rem]  "
-              }
-            >
-              Currently <span className={" text-[#AF0C48]"}>Freelancing</span> for
-              <span className={" text-[#AF0C48]"}>
-                {" "}
-                UX, UI, & Web Design{" "}
-              </span>{" "}
-              Project .
-              <br />
-              Invite me to join your team 👉 {" "}
-              <a className={" text-[#AF0C48] underline underline-offset-4"}
-              target="_blank" rel="noreferrer" href="mailto:haticekubrasertkaya@gmail.com"
-              >
-                haticekubrasertkaya@gmail.com
-              </a>
-            </p>
+          );
+        })}
+         {/* <div className=''>
+        <table className='flex border-collapse border rounded-lg border-slate-100  place-items-center mt-72'>
+            <tbody>
+              <tr>
+                <td className='border border-slate-300'>Birthdate</td>
+                <td className='border border-slate-300'>24.11.1998</td>
+              </tr>
 
-            <div
-                className="ellipse"
-                
-              ></div>
+              <tr>
+                <td className='border border-slate-300'>Current Address</td>
+                <td className='border border-slate-300'>Istanbul</td>
+              </tr>
+
+              <tr>
+                <td className='border border-slate-300'>Education</td>
+                <td className='border border-slate-300'>Ankara Yıldırım Beyazıt University Nursing Programme,2020   Yıldız Teknik University Business Department,Student</td>
+              </tr>
+
+              <tr>
+                <td className='border border-slate-300'>Preferred Role</td>
+                <td className='border border-slate-300'>Frontend, UI</td>
+              </tr>
+
+            </tbody>
+        </table>
+        </div> */}
 
 
+        
+
+      </div>
+    </section>
     
-
-    </div>
   )
 }
 
