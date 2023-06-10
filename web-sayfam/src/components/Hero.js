@@ -7,6 +7,8 @@ const Hero = () => {
     <>
       <section className="container bg-slate-200 relative overflow-hidden">
         <div className=" absolute -right-5 top-32 rounded-full h-10  w-28 mt-72 bg-[#EA2678] "></div>
+        <div className=" absolute h-5 w-20  top-60  ml-60 bg-[#EA2678]"></div>
+
         <div className="content ">
           <header className="flex ms-auto w-fit gap-x-5 items-center py-12 px-8">
             <div>DARK MODE</div>
@@ -48,12 +50,17 @@ const Hero = () => {
                 </a>
 
                 <p className="text-sm">
-                  Currently <span className="">Freelancing</span> for
-                  <span className=""> UX, UI, & Web Design </span> Project .
+                  Currently <span className=" text-[#AF0C48]">Freelancing</span>{" "}
+                  for
+                  <span className=" text-[#AF0C48]">
+                    {" "}
+                    UX, UI, & Web Design{" "}
+                  </span>{" "}
+                  Project .
                   <br />
                   Invite me to join your team 👉{" "}
                   <a
-                    className="underline text-red-500"
+                    className="underline text-[#AF0C48]"
                     target="_blank"
                     rel="noreferrer"
                     href="mailto:haticekubrasertkaya@gmail.com"
@@ -73,7 +80,8 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className="container bg-white relative overflow-hidden">
+      <section className="container bg-white">
+        <div className=" absolute rounded-[50%]  ml-[975px] w-14 h-14 border-8 border-[#D9D9D9]"></div>
         <div className="inline">
           <h2 className="flex font-semibold place-content-center text-6xl">
             Skills
@@ -94,6 +102,7 @@ const Hero = () => {
         </div>
       </section>
       <section className="container  bg-slate-200">
+        <div className=" absolute h-3 w-20  ml-[710px] mt-36 bg-[#82BBFF]"></div>
         <div className="  flex flex-col justify-between   py-9">
           <h2 className="flex font-semibold place-content-center text-6xl mb-5">
             Profile
